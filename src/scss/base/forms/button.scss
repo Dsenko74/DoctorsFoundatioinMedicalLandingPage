@@ -1,0 +1,65 @@
+//<BUTTONS (a.btn+tab)>
+// Сніппет (HTML): btn
+
+.button {
+	white-space: nowrap;
+	display: inline-flex;
+	max-width: toRem(133);
+	padding: toRem(15) toRem(30);
+	align-items: center;
+	color: #fff;
+	font-weight: 500;
+	line-height: 1.6;
+	border-radius: toRem(5);
+	@include adaptiveValue("font-size", 18, 10, 0, $containerWidth, 320);
+	@media (max-width:$mobile){
+		padding: toRem(10) toRem(15);
+	}
+	@media (any-hover: hover) {
+		&:hover {
+		}
+	}
+	&--fw {
+		width: 100%;
+	}
+	&-border {
+		border: 1px solid  #FFF;
+	}
+	&-big {
+		max-width: toRem(246);
+	}
+	&-news {
+		position: relative;
+		padding: 15px 30px;
+		border-radius: 5px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: toRem(13);
+		background: #184E62;
+		max-width: toRem(155);
+		font-size: toRem(16);
+		&::after {
+			position: absolute;
+			content: '';
+			width: 8px;
+			height: 14px;
+			top: 50%;
+			transform: translateY(-50%);
+			right: toRem(30);
+			background: url('@img/news/icon/arrow.svg');
+
+		}
+	}
+	&-item {
+		display: inline-block;
+		position: relative;
+		padding: toRem(10) toRem(20);
+		border-radius: 5px;
+		border: 1px solid #184E62;
+		color: #184E62;
+		font-size: toRem(16);
+		font-weight: 500;
+		line-height: 1.6; 
+	}
+}

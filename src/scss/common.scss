@@ -1,0 +1,77 @@
+// Заголовки, загальні БЕМ блоки та інше...
+.block-header {  
+  margin: 0 auto;
+  color: $mainColor;
+  font-weight: 600;
+  text-align: center;
+
+  &--white {
+    color: #fff;
+  }
+
+  &--big {
+
+  }
+
+  &__title {
+    //color: $mainColor;
+    @include adaptiveValue("font-size", 44, 28);
+    line-height: 1.3;
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 30, 20);
+    }
+    transform: translate(0, 15%);
+		opacity: 0;
+		transition:
+			transform 1s,
+			opacity 1s;
+      ._watcher-view & {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+  }
+
+  &__text {
+    margin: 0 auto;
+    font-size: toRem(16);
+    transform: translate(0, 15%);
+		opacity: 0;
+		transition:
+			transform 0.5s 0.3s,
+			opacity 0.5s 0.3s;
+		._watcher-view & {
+			transform: translate(0, 0);
+			opacity: 1;
+		}
+    p{
+      font-weight: 400;
+      line-height: 1.6;
+    }
+  }
+}
+
+.bold {
+  font-weight: 600;
+}
+.underline {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.secondary {
+  color: $secondary;
+}
+.main {
+  color: $mainColor;
+}  
+
+// <div class="block-header block-header--white">
+// <h2 class="block-header__title">
+//   
+// </h2>
+// <div class="block-header__text">
+//   <p>
+//  
+//   </p>
+// </div>
+// </div>
+
