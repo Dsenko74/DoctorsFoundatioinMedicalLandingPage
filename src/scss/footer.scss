@@ -6,8 +6,11 @@
     @include adaptiveValue("padding-top", 90, 30);
     @include adaptiveValue("padding-bottom", 55, 20);
   }
+  &__body {
+    margin: 0 auto;
+  }
 
-  &__content {
+  &__content {  margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -15,6 +18,7 @@
     @media (max-width:$mobile){
        flex-direction: column; 
        align-items: center;
+      // max-width: toRem(610);
     }
     @media (max-width:$mobileSmall){
        align-items: start; 
@@ -27,7 +31,13 @@
     font-weight: 40;
     line-height: 1.6;
     flex: 0 0 toRem(234);
-    &:not(:last-child) {margin-bottom: toRem(23);}
+    &:not(:last-child) {
+      margin-bottom: toRem(23);
+    }
+    @media (min-width:$mobileSmall){
+        align-self: start;
+    }
+
   }
 
   &__logo {
@@ -70,7 +80,7 @@
   }
 
   &__menu {
-
+    width: 100%;
     color: #fff;
   }
 
@@ -105,10 +115,9 @@
     display: flex;
     justify-content: space-between;
     align-items: start;
-    //flex-wrap: wrap;
+   
     @include adaptiveValue("column-gap", 140, 15, 0, 1140, 769);
     @media (max-width:$mobile){
-      @include adaptiveValue("column-gap", 100, 20, 0, 768.98, 479);
       margin-bottom: toRem(20);  
     }
     @media (max-width:$mobileSmall){
@@ -174,6 +183,7 @@
     @include adaptiveValue("font-size", 16, 12);
     font-weight: 400;
     line-height: 1.6;
+    white-space: nowrap;
   }
 }
 

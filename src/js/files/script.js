@@ -5,16 +5,23 @@ import { flsModules } from "./modules.js";
  
 const doctors = document.querySelectorAll('.item-doctors');
 const show = document.querySelectorAll('.item-doctors__show');
-const color = document.querySelectorAll('.item-doctors');
-
+//const color = document.querySelectorAll('.item-doctors');
+// doctors.forEach((doctor, index) => {
+//   doctor.addEventListener('click', () => {
+//     show.forEach((item, i) => {
+//       item.classList.toggle("_active", i === index);
+//     });
+//     doctor.classList.toggle("_active");
+//   });
+// });
 for (let i = 0; i < doctors.length; i++) {
   doctors[i].addEventListener('click', function(e) {
     for (let i = 0; i < doctors.length; i++){
       show[i].classList.remove("_active"); 
-      color[i].classList.remove("_active");
+      doctors[i].classList.remove("_active");
     }
     show[i].classList.add("_active");
-    color[i].classList.add("_active");
+    doctors[i].classList.add("_active");
   })
 }
 
