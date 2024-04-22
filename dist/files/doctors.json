@@ -1,0 +1,75 @@
+{
+	"items":[
+		{
+			"id":1,
+			"image":"img/schedule/doc1.jpg",
+      "category":"MBBS  CACD",
+			"name":"Corey Lipshutz",
+			"url":"https://google.com",
+			"position":"Surgery Specialist",
+			"location":"STK Medical Hospital, USA",
+			"days":"Sunday"
+		},
+    {
+			"id":2,
+			"image":"img/schedule/doc2.jpg",
+      "category":"MBBS  FACD",
+			"name":"Ahmad Herwitz",
+			"url":"https://google.com",
+			"position":"Pulmonary Specialist",
+			"location":"NNC Medical Hospital, USA",
+			"days":"Tuesday"
+		},
+    {
+			"id":3,
+			"image":"img/schedule/doc3.jpg",
+      "category":"MBBS  KGCD",
+			"name":"Cooper Septimus",
+			"url":"https://google.com",
+			"position":"Urology Specialist",
+			"location":"SSB Medical Hospital, USA",
+			"days":"Wednesday"
+		},
+    {
+			"id":4,
+			"image":"img/schedule/doc4.jpg",
+      "category":"MBBS  EGCD",
+			"name":"Gustavo Aminoff",
+			"url":"https://google.com",
+			"position":"Cardiology Specialist",
+			"location":"SSC Medical Hospital, USA",
+			"days":"Thursday"
+		},
+    {
+			"id":5,
+			"image":"img/schedule/doc5.jpg",
+      "category":"MBBS  CCCD",
+			"name":"Abram Lubin",
+			"url":"https://google.com",
+			"position":"Neurology Specialist",
+			"location":"JCK Medical Hospital, USA",
+			"days":"Friday"
+		},
+    {
+			"id":6,
+			"image":"img/schedule/doc6.jpg",
+      "category":"MBBS  LLCD",
+			"name":"Cristofer Botosh",
+			"url":"https://google.com",
+			"position":"Orthopedic Specialist",
+			"location":"STK Medical Hospital, USA",
+			"days":"Monday"
+		},
+		{
+			"id":7,
+			"image":"img/schedule/doc2.jpg",
+      "category":"MBBS  LLCD",
+			"name":"Cristofer Botosh",
+			"url":"https://google.com",
+			"position":"Orthopedic Specialist",
+			"location":"STK Medical Hospital, USA",
+			"days":"Friday"
+		}
+
+	]
+}
