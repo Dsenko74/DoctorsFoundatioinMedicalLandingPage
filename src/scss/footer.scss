@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: start;
-    column-gap: toRem(30);
+    column-gap: toRem(30); 
     @media (max-width:$mobile){
        flex-direction: column; 
        align-items: center;
@@ -110,12 +110,10 @@
   }
 }
 .menu-footer {
-
   &__spollers {
     display: flex;
     justify-content: space-between;
     align-items: start;
-   
     @include adaptiveValue("column-gap", 140, 15, 0, 1140, 769);
     @media (max-width:$mobile){
       margin-bottom: toRem(20);  
@@ -125,10 +123,6 @@
        row-gap: toRem(10);
     }
   }
-
-  &__block {
-  }
-
 	&__title {
 		list-style: none;
 		font-weight: 500;
@@ -175,11 +169,7 @@
     gap: toRem(10);
   }
 
-  &__item {
-  }
-
   &__link {
-    //font-size: 16px;
     @include adaptiveValue("font-size", 16, 12);
     font-weight: 400;
     line-height: 1.6;

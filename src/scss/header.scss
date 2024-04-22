@@ -188,7 +188,7 @@
 		font-weight: 500;
 		line-height: 1.6;
 		position: relative;
-		@include adaptiveValue("font-size", 18, 14);
+		@include adaptiveValue("font-size", 18, 14, 0, $containerWidth, 768);
 		@media (max-width:$mobile){
 			font-size: toRem(24);
 		}

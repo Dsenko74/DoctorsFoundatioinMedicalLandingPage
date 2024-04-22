@@ -28,6 +28,7 @@ for (let i = 0; i < doctors.length; i++) {
 
 
 const doctorItems = document.querySelector('.schedule__items');
+console.log(doctorItems);
 let data;
 let startItem = 0;
 let endItem = 7;
@@ -36,7 +37,7 @@ if (doctorItems) {
 }
 
 async function loadDoctorItems() {
-  const response = await fetch("files/doctors.json", {
+  const response = await fetch("../../files/doctors.json", {
 		method: "GET"
 	});
 	if (response.ok) {
