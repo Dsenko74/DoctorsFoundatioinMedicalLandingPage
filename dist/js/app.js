@@ -4329,7 +4329,7 @@
     let endItem = 7;
     if (doctorItems) loadDoctorItems();
     async function loadDoctorItems() {
-        const response = await fetch("../../files/doctors.json", {
+        const response = await fetch("../files/doctors.json", {
             method: "GET"
         });
         if (response.ok) {
